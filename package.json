@@ -1,0 +1,35 @@
+{
+  "name": "pruebasnodeserver",
+  "version": "1.0.0",
+  "description": "Pruebas en nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w1andresv/pruebasNodeserver.git"
+  },
+  "author": "Weymar Andres Vargas Castillo",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "exceljs": "3.8.2",
+    "exceljs-node": "^1.6.7",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
+    "mongoose": "^5.9.1",
+    "mongoose-unique-validator": "^2.0.3",
+    "nodemon": "^2.0.3"
+  },
+  "bugs": {
+    "url": "https://github.com/w1andresv/pruebasNodeserver/issues"
+  },
+  "homepage": "https://github.com/w1andresv/pruebasNodeserver#readme"
+}
