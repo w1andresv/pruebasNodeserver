@@ -24,7 +24,7 @@ app.get('/connection', (req, res) => {
   // console.log(req);
   // res.status(200).json({ estado: true, token: 'token' });
 
-
+return {};
 
 });
 
