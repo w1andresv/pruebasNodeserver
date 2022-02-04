@@ -20,6 +20,7 @@ app.get('/', (req, res) => {
 });
 app.get('/connection', (req, res) => {
  console.log('---------CONECTADO-----------');
+ console.log(req);
   // console.log(req);
   res.status(200).json({ estado: true, token: 'token' });
 
