@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
   const ENDPOINT = 'c49ab8hu8d.execute-api.us-west-2.amazonaws.com/desarrollo/';
   const client = new AWS.ApiGatewayManagementApi({ endpoint: ENDPOINT });
-  // console.log(client);
+  console.log(client);
   // console.log(req);
   res.status(200).json({ estado: true, token: 'token' });
 
