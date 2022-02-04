@@ -12,29 +12,11 @@ app.get('/', (req, res) => {
   const client = new AWS.ApiGatewayManagementApi({ endpoint: ENDPOINT });
   // console.log(client);
   // console.log(req);
-  handler();
   res.status(200).json({ estado: true, token: 'token' });
 
 
 
 });
 
-const handler = async (event, context) => {
-
-  console.log(event);
-  if (!event.requestContext) {
-    return {};
-  }
-  try {
-    const connectionId = event.requestContext.connectionId;
-    const routeKey = event.requestContext.routeKey;
-    const body = JSON.parse(event.body || '{}');
-
-  } catch (err) {
-    console.error(err);
-  }
-
-  return {};
-};
 
 module.exports = app;
