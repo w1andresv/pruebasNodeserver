@@ -19,21 +19,19 @@ app.get('/', (req, res) => {
 
 });
 app.get('/connection', (req, res) => {
- console.log('---------CONECTADO-----------');
- console.log(req.body);
+  console.log('---------CONECTADO-----------');
+  console.log(req.body);
   // console.log(req);
   // res.status(200).json({ estado: true, token: 'token' });
 
-return {};
-
+  return res.status(200).json({ estado: true });
 });
 app.post('/setUser', (req, res) => {
- console.log('---------SET USER-----------');
- console.log(req.body);
+  console.log('---------SET USER-----------');
+  console.log(req.body);
   // console.log(req);
   // res.status(200).json({ estado: true, token: 'token' });
-
-return {};
+  return res.status(200).json({ estado: true, action: 'setUser' });
 
 });
 
